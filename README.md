@@ -60,6 +60,8 @@ This chain based on frontier or substrate.
     - [ ] Add lock account support on finadora.
     - [ ] Bridge.
 
+## Step for Demo.
+
 ### ERC20 & ERC721
 
 > Token on rinkeby.
@@ -67,8 +69,6 @@ This chain based on frontier or substrate.
 ```bash
 https://rinkeby.etherscan.io/tx/0x60362a94097fe74b95eaf2af8effae8f059d635bfe33374114533eeec0aa17d4
 ```
-
-## Step for Demo.
 
 ### Start environment
 
