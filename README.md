@@ -1,5 +1,14 @@
 # chain-bridge-demo-fdc
 
+Reference project:
+
+- [compound-finance/gateway](https://github.com/compound-finance/gateway)
+- [frontier](https://github.com/paritytech/frontier)
+- [substrate](https://substrate.dev/)
+- [chainbridge](https://github.com/ChainSafe/ChainBridge)
+- [Aurora](https://near.org/zh/blog/aurora-launches-near/)
+- [SputnikVM](https://github.com/rust-blockchain/evm)
+
 ## Plan
 
 Step 1 (Demo & MVP):
