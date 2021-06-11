@@ -231,3 +231,16 @@ cb-sol-cli --url https://rinkeby-light.eth.linkpool.io/ --privateKey 9fab3886bdf
     --resourceId 0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00
 ```
 
+### Bridge (d)FRA
+
+A plan to bridge Findora and Findora Defi.
+
+In demo step, we need cross dFRA to FRA.
+
+``` bash
+[Findora Defi Chain] <--RPC--> Bridge --RPC--> [Findora Main Chain]
+        ^                ^               ^
+        |                |               |
+Smart Contract    ETH compact RPC    Findora RPC
+```
+
