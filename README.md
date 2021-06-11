@@ -182,3 +182,29 @@ Centrifuge Asset:   0xd73BE42678b94Cb75e8Bb840b2df1BEe1a26320A
 ================================================================
 ```
 
+Configure bridge
+
+```bash
+cb-sol-cli --url http://127.0.0.1:9933 --privateKey 9fab3886bdf3281b8ace6957efb19ddd5bb6d32416ec408e6b0ce34e3a6eb732 --gasPrice 10000000000 bridge register-resource \
+    --bridge 0x60dF29E1ACD488919341c63FA2BfB7F05Daa7C7A \
+    --handler 0xB7223605039dD9BFAE528B71eA7157725b9d8416 \
+    --resourceId 0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00 \
+    --targetContract 0xa5d10fA7aB8EC1535C135F88E6d477c994388B1A
+```
+
+Set burn
+
+``` bash
+cb-sol-cli --url http://127.0.0.1:9933 --privateKey 9fab3886bdf3281b8ace6957efb19ddd5bb6d32416ec408e6b0ce34e3a6eb732 --gasPrice 10000000000 bridge set-burn \
+    --bridge 0x60dF29E1ACD488919341c63FA2BfB7F05Daa7C7A \
+    --handler 0xB7223605039dD9BFAE528B71eA7157725b9d8416 \
+    --tokenContract 0xa5d10fA7aB8EC1535C135F88E6d477c994388B1A
+```
+
+Set mint
+
+``` bash
+cb-sol-cli --url http://127.0.0.1:9933 --privateKey 9fab3886bdf3281b8ace6957efb19ddd5bb6d32416ec408e6b0ce34e3a6eb732 --gasPrice 10000000000 erc20 add-minter \
+    --minter 0xB7223605039dD9BFAE528B71eA7157725b9d8416 \
+    --erc20Address 0xa5d10fA7aB8EC1535C135F88E6d477c994388B1A
+```
