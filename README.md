@@ -67,7 +67,7 @@ This chain based on frontier or substrate.
 > Token on rinkeby.
 
 ```bash
-https://rinkeby.etherscan.io/tx/0x60362a94097fe74b95eaf2af8effae8f059d635bfe33374114533eeec0aa17d4
+https://rinkeby.etherscan.io/token/0xaa4fb0541d18aa4b0b89eb706263ea9c56589698
 ```
 
 ### Start environment
@@ -128,11 +128,17 @@ Centrifuge Asset:   0xAed12A4f43ca3B97f234c61D7d637cC1534C396b
 
 Then configure contracts on ETH.
 
+``` bash
+cb-sol-cli --url https://rinkeby-light.eth.linkpool.io/ --privateKey 9fab3886bdf3281b8ace6957efb19ddd5bb6d32416ec408e6b0ce34e3a6eb732 --gasPrice 10000000000 bridge register-resource --bridge 0xB7223605039dD9BFAE528B71eA7157725b9d8416 --handler 0x5F88E272fd66B4182A1705B6Ca51BC4658e00E0A --resourceId 0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00 --targetContract 0xaa4fb0541d18aa4b0b89eb706263ea9c56589698
 ```
-cb-sol-cli --url https://rinkeby-light.eth.linkpool.io/ --privateKey 9fab3886bdf3281b8ace6957efb19ddd5bb6d32416ec408e6b0ce34e3a6eb732 --gasPrice 10000000000 bridge register-resource \
-        --bridge 0xB9cAFB95eb31Fc68807fbfA5b52bDB87eF6932fB \
-        --handler 0x60dF29E1ACD488919341c63FA2BfB7F05Daa7C7A \
-        --resourceId 0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00 \
-        --targetContract
-        ```
+
+Deploy chainbridge contract on FDC.
+
+``` bash
+cb-sol-cli --url http://127.0.0.1:9933 --privateKey 9fab3886bdf3281b8ace6957efb19ddd5bb6d32416ec408e6b0ce34e3a6eb732 --gasPrice 10000000000 deploy --all --relayers 0xE2B23454bEFe73Cf3e74cE9533F5FfFA091094a5 --relayerThreshold 1 --chainId 1
+```
+Output:
+
+``` bash
+```
 
