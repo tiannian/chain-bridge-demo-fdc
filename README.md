@@ -208,3 +208,26 @@ cb-sol-cli --url http://127.0.0.1:9933 --privateKey 9fab3886bdf3281b8ace6957efb1
     --minter 0xB7223605039dD9BFAE528B71eA7157725b9d8416 \
     --erc20Address 0xa5d10fA7aB8EC1535C135F88E6d477c994388B1A
 ```
+
+Configure and start chainbridge
+
+Approve token:
+
+``` bash
+cb-sol-cli --url https://rinkeby-light.eth.linkpool.io/ --privateKey 9fab3886bdf3281b8ace6957efb19ddd5bb6d32416ec408e6b0ce34e3a6eb732 --gasPrice 10000000000 erc20 approve \
+    --amount 100 \
+    --erc20Address 0xaa4fb0541d18aa4b0b89eb706263ea9c56589698 \
+    --recipient 0x5F88E272fd66B4182A1705B6Ca51BC4658e00E0A
+```
+
+Deposit token
+
+``` bash
+cb-sol-cli --url https://rinkeby-light.eth.linkpool.io/ --privateKey 9fab3886bdf3281b8ace6957efb19ddd5bb6d32416ec408e6b0ce34e3a6eb732 --gasPrice 10000000000 erc20 deposit \
+    --amount 100 \
+    --dest 1 \
+    --bridge 0xB7223605039dD9BFAE528B71eA7157725b9d8416 \
+    --recipient 0xA346505ABcD3670812dc8DDCC10535baeAe78541 \
+    --resourceId 0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00
+```
+
