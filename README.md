@@ -56,9 +56,9 @@ This chain based on frontier or substrate.
 2. Crosschain bridge in decentralized on Findora Defi Chain.
 2. Write a pallet to cross ETH. Reference: [compound gateway](https://github.com/compound-finance/gateway)
 3. Write a pallet to cross Findora.
-  - [ ] Add basic Event for transaction on finadora.
-  - [ ] Add lock account support on finadora.
-  - [ ] Bridge.
+    - [ ] Add basic Event for transaction on finadora.
+    - [ ] Add lock account support on finadora.
+    - [ ] Bridge.
 
 ### ERC20 & ERC721
 
