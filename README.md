@@ -18,38 +18,6 @@ Ethereneum <-> Findora
         ChainBridge
 ```
 
-
-## Plan of Demo (WIP)
-
-1. Findora Defi Chain (A ETH compact chain based on the substrate (frontier)).
-2. Deploy ETH/ERC20/ERC721 (contracts) in ETH testnet.
-3. Use `ChainBridge` to cross these assets.
-4. Support vanilla ETH ? (It seems support. Map ETH on A chain to ERC20 on B Chain)
-5. Map FRA to Findora Defi Chain in ERC20 by js quickly.
-
-### Findora Defi Chain Demo
-
-[frontier](https://github.com/paritytech/frontier)
-
-Verify this chain can use all tools for ETH.
-- [X] Basic Transfer.
-- [X] Smart Contract.
-- [X] ERC20/ERC721 Token.
-
-## Plan of Step 2:
-
-### Findora Defi Chain
-
-This chain based on frontier or substrate.
-
-1. Totally compact ETH.
-2. Crosschain bridge in decentralized on Findora Defi Chain.
-2. Write a pallet to cross ETH. Reference: [compound gateway](https://github.com/compound-finance/gateway)
-3. Write a pallet to cross Findora.
-    - [ ] Add basic Event for transaction on finadora.
-    - [ ] Add lock account support on finadora.
-    - [ ] Bridge.
-
 ## Step for Demo.
 
 ### ERC20 & ERC721
