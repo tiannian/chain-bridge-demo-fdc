@@ -11,23 +11,13 @@ Reference project:
 
 ## Plan
 
-Step 1 (Demo & MVP):
-
 ```
-Ethereneum <-> Findora Defi Chain(Substrate based, ETH compact) <-> Findora
-            ^                                                    ^
-            |                                                    |
-        ChainBridge                                         Bridge (need develop)
+Ethereneum <-> Findora
+            ^
+            |
+        ChainBridge
 ```
 
-Step 2:
-
-```
-Ethereneum <-> Findora Defi Chain(Substrate based, ETH compact) <-> Findora
-            ^                                                    ^
-            |                                                    |
-Crosschain(by substrate pallet and contracts)               Crosschain(by substrate pallet)
-```
 
 ## Plan of Demo (WIP)
 
